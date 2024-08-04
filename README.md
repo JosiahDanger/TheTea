@@ -14,6 +14,7 @@ I find that when I am brewing tea, I often become occupied with another task, an
   - The app will speak to alert the user that their tea is ready.
 
 # Under the Hood
+- .NET 8.0!
 - The app follows the MVVM architechtural pattern: the ViewModel monitors the timer Model for changes in its state, and updates the View accordingly.
 - The aforementioned timer Model is implemented as a state machine using the [Stateless](https://github.com/dotnet-state-machine/stateless) library.
 - Sound playback is achieved through [LibVLCSharp](https://github.com/videolan/libvlcsharp).
