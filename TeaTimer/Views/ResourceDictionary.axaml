@@ -1,0 +1,12 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+					xmlns:local="clr-namespace:TeaTimer;assembly=TeaTimer">
+					
+    <x:Double x:Key="WindowHeight">300</x:Double>
+    <x:Double x:Key="WindowWidth">300</x:Double>
+
+	<x:String x:Key="TimeDurationFormatString">D2</x:String>
+
+	<local:EnumToStringConverter x:Key="enumToStringConverter"/>
+
+</ResourceDictionary>

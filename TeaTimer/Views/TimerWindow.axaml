@@ -1,0 +1,109 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:TeaTimer.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		
+        mc:Ignorable="d" 
+		d:DesignWidth="{StaticResource WindowWidth}" 
+		d:DesignHeight="{StaticResource WindowHeight}"
+        x:Class="TeaTimer.Views.TimerWindow"
+        x:DataType="vm:TimerWindowViewModel"
+		
+		CanResize="False"
+		Height="{StaticResource WindowHeight}"
+        Icon="/Assets/The Tea.ico"
+        Title="The Tea"
+		Width="{StaticResource WindowWidth}"
+		WindowStartupLocation="CenterScreen">
+
+	<Window.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceInclude Source="/Views/ResourceDictionary.axaml" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Window.Resources>
+
+    <Design.DataContext>
+		 <vm:TimerWindowViewModel/>
+    </Design.DataContext>
+
+	<!-- I have formatted this AXAML file according to coding guidelines available at:
+			https://github.com/cmaneu/xaml-coding-guidelines -->
+
+	<!-- TODO: Make this border change visually according to the current timer state. -->
+	<Border BorderBrush="{DynamicResource SystemAccentColor}"
+			BorderThickness="3"
+			CornerRadius="{DynamicResource ControlCornerRadius}"
+			Margin="10">
+
+		<!-- TODO: Replace this outer StackPanel with a Grid. -->
+		<StackPanel HorizontalAlignment="Center"
+					VerticalAlignment="Center">
+
+			<StackPanel Margin="10 15 10 0"
+						Orientation="Horizontal">
+
+				<StackPanel Margin="10">
+					<TextBlock Margin="0 5"
+							   Text="Minutes"/>
+					<NumericUpDown Classes="TimeDurationUserInput"
+								   Value="{Binding TimerMinutesUserInput}"/>
+				</StackPanel>
+
+				<StackPanel Margin="10">
+					<TextBlock Margin="0 5"
+							   Text="Seconds"/>
+					<NumericUpDown Classes="TimeDurationUserInput"
+								   Value="{Binding TimerSecondsUserInput}"/>
+				</StackPanel>
+
+			</StackPanel>
+
+			<Button Command="{Binding ButtonChangeTimerStateClick}"
+					Content="{Binding TimerExposedTransitionCommand, 
+									  Converter={StaticResource enumToStringConverter}}"
+					Height="35"
+					HorizontalAlignment="Right"
+					HorizontalContentAlignment="Center"
+					IsDefault="True"
+					Margin="0 10 20 0"
+					VerticalContentAlignment="Center"
+					Width="105"/>
+
+			<Border Background="{DynamicResource TextControlBackground}"
+					BorderBrush="{DynamicResource TextControlBorderBrush}"
+					BorderThickness="3"
+					CornerRadius="10"
+					HorizontalAlignment="Center"
+					Margin="25 35"
+					Padding="5">
+
+				<StackPanel Margin="10 10 10 0"
+							Orientation="Horizontal">
+
+					<!-- TODO: Can the Text binding be formatted more neatly? -->
+					
+					<TextBlock Classes="TimerDisplayText"
+							   Text=
+								"{Binding TimerRemainingMinutes, 
+								  StringFormat=
+									{StaticResource TimeDurationFormatString}}"/>
+
+					<TextBlock Classes="TimerDisplayText"
+							   Text="{Binding TimeSeparator}"/>
+
+					<TextBlock Classes="TimerDisplayText"
+							   Text=
+								"{Binding TimerRemainingSeconds, 
+								  StringFormat=
+									{StaticResource TimeDurationFormatString}}"/>
+				</StackPanel>
+			</Border>
+
+		</StackPanel>
+
+	</Border>
+
+</Window>

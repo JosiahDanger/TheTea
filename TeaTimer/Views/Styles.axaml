@@ -1,0 +1,25 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <!-- Add Controls for Previewer Here -->
+        </Border>
+    </Design.PreviewWith>
+
+    <Style Selector="NumericUpDown.TimeDurationUserInput">
+        <Setter Property="Increment" Value="1"/>
+        <Setter Property="Minimum" Value="0"/>
+        <Setter Property="Maximum" Value="59"/>
+        <Setter Property="ParsingNumberStyle" Value="Integer"/>
+        <Setter Property="Width" Value="105"/>
+    </Style>
+
+	<Style Selector="TextBlock.TimerDisplayText">
+		<!-- TODO: Investigate improved font integration. -->
+		
+		<Setter Property="FontFamily" Value="Consolas"/>
+		<Setter Property="FontSize" Value="35"/>
+		<Setter Property="Foreground" Value="Red"/>
+	</Style>
+	
+</Styles>
