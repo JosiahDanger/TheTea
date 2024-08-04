@@ -1,6 +1,8 @@
 # TheTea
 Bare-bones desktop tea timer app built with Avalonia.
 
+I find that when I am brewing tea, I often become occupied with another task, and subsequently forget to remove the tea bag from my mug. I chose to develop this app in order to solve this problem. In doing so, I saw an opportunity to teach myself Avalonia and ReactiveUI / ReactiveX.
+
 # Existing Features
 - App theme adapts automatically to that of your operating system.
 - Audio output:
@@ -8,7 +10,6 @@ Bare-bones desktop tea timer app built with Avalonia.
   - The app will speak to alert the user that their tea is ready.
 
 # Under the Hood
-I have developed this app in order to teach myself Avalonia and ReactiveUI / ReactiveX.
 - The app follows the MVVM architechtural pattern: the ViewModel monitors the timer Model for changes in its state, and updates the View accordingly.
 - The aforementioned timer Model is implemented as a state machine using the [Stateless](https://github.com/dotnet-state-machine/stateless) library.
 - Sound playback is achieved through [LibVLCSharp](https://github.com/videolan/libvlcsharp).
