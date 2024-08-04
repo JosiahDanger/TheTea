@@ -3,6 +3,10 @@ Bare-bones desktop tea timer app built with Avalonia.
 
 I find that when I am brewing tea, I often become occupied with another task, and subsequently forget to remove the tea bag from my mug. I chose to develop this app in order to solve this problem. In doing so, I saw an opportunity to teach myself Avalonia and ReactiveUI / ReactiveX.
 
+&nbsp;
+
+![Screenshot](https://github.com/user-attachments/assets/38713bc6-c537-41af-9405-e5a32b0e445b)
+
 # Existing Features
 - App theme adapts automatically to that of your operating system.
 - Audio output:
@@ -18,6 +22,7 @@ I find that when I am brewing tea, I often become occupied with another task, an
 - A toast notification will be displayed when the user's tea is ready.
 - 'One More Minute' button:
   - A button will be added to the app GUI. The button will become enabled when the timer is counting down. Upon clicking the button, one minute will be added to the remaining time.
+- The decorative border inside the application window will change visually according to the state of the timer.
 - Settings menu:
   - The user will be able to configure application settings. Their preferences will be restored automatically upon opening the app.
   - A setting will be added in which the user will be able to configure the audio output volume of the app.
