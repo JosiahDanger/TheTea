@@ -6,11 +6,19 @@
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
-    <StartupObject>TeaTimer.Program</StartupObject>
+    <StartupObject>TheTea.Program</StartupObject>
+    <ApplicationIcon>Assets\TheTea.ico</ApplicationIcon>
+    <AssemblyName>TheTea</AssemblyName>
+    <Title></Title>
+    <Authors />
   </PropertyGroup>
 
   <ItemGroup>
     <AvaloniaResource Include="Assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\TheTea.ico" />
   </ItemGroup>
 
   <ItemGroup>

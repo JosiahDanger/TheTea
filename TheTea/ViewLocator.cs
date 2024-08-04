@@ -1,9 +1,9 @@
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
 using System;
-using TeaTimer.ViewModels;
+using TheTea.ViewModels;
 
-namespace TeaTimer
+namespace TheTea
 {
     public class ViewLocator : IDataTemplate
     {

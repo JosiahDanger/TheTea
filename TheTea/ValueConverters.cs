@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Avalonia.Data.Converters;
 
-namespace TeaTimer
+namespace TheTea
 {
     public class EnumToStringConverter : IValueConverter
     {

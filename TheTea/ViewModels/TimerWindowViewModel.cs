@@ -1,4 +1,4 @@
-﻿namespace TeaTimer.ViewModels
+﻿namespace TheTea.ViewModels
 {
     using Avalonia.Controls;
     using Avalonia.Platform;
@@ -9,7 +9,7 @@
     using System.Globalization;
     using System.Reactive.Linq;
     using System.Threading;
-    using TeaTimer.Models;
+    using TheTea.Models;
 
     public class TimerWindowViewModel : ViewModelBase
     {
@@ -20,7 +20,7 @@
         private const byte SpeakRemainingSecondsThresholdUpper = 5;
         private const byte SpeakRemainingSecondsThresholdLower = 1;
 
-        private const string SoundsDirectoryPath = "avares://TeaTimer/Assets/Sounds/";
+        private const string SoundsDirectoryPath = "avares://TheTea/Assets/Sounds/";
         private const string SoundsAlarmFilename = "Alarm";
         private const string SoundsFilenameExtension = ".flac";
 

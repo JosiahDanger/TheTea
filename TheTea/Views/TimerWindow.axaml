@@ -1,18 +1,18 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:TeaTimer.ViewModels"
+        xmlns:vm="using:TheTea.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		
         mc:Ignorable="d" 
 		d:DesignWidth="{StaticResource WindowWidth}" 
 		d:DesignHeight="{StaticResource WindowHeight}"
-        x:Class="TeaTimer.Views.TimerWindow"
+        x:Class="TheTea.Views.TimerWindow"
         x:DataType="vm:TimerWindowViewModel"
 		
 		CanResize="False"
 		Height="{StaticResource WindowHeight}"
-        Icon="/Assets/The Tea.ico"
+        Icon="/Assets/TheTea.ico"
         Title="The Tea"
 		Width="{StaticResource WindowWidth}"
 		WindowStartupLocation="CenterScreen">

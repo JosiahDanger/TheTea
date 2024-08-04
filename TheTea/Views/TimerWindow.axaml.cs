@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace TeaTimer.Views
+namespace TheTea.Views
 {
     public partial class TimerWindow : Window
     {

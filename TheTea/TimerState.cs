@@ -1,4 +1,4 @@
-﻿namespace TeaTimer
+﻿namespace TheTea
 {
     public enum TimerState : byte
     {

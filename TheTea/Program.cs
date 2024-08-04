@@ -2,7 +2,7 @@
 using Avalonia.ReactiveUI;
 using System;
 
-namespace TeaTimer
+namespace TheTea
 {
     internal sealed class Program
     {

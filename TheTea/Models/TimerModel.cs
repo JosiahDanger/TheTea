@@ -4,7 +4,7 @@ using Avalonia.Threading;
 using ReactiveUI;
 using Stateless;
 
-namespace TeaTimer.Models
+namespace TheTea.Models
 {
     public class TimerModel : ReactiveObject
     {

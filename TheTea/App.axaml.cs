@@ -1,11 +1,10 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using System;
-using TeaTimer.ViewModels;
-using TeaTimer.Views;
+using TheTea.ViewModels;
+using TheTea.Views;
 
-namespace TeaTimer
+namespace TheTea
 {
     public partial class App : Application
     {

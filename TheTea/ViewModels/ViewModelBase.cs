@@ -1,6 +1,6 @@
 ﻿using ReactiveUI;
 
-namespace TeaTimer.ViewModels
+namespace TheTea.ViewModels
 {
     public class ViewModelBase : ReactiveObject
     {
