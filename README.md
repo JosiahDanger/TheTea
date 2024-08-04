@@ -2,8 +2,11 @@
 Bare-bones desktop tea timer app built with Avalonia.
 
 ---
+**TL;DR**
 
-Do you simply [want a Windows executable](https://old.reddit.com/r/github/comments/1at9br4/i_am_new_to_github_and_i_have_lots_to_say/?share_id=rjJKZS1aIO04c9zK5J3vL)? Please see [Releases](https://github.com/JosiahDanger/TheTea/releases/), and download 'TheTea.Windows.x64.zip'. You will need to install as a prerequisite the [x64 .NET Desktop Runtime 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
+Do you simply [want a Windows executable](https://old.reddit.com/r/github/comments/1at9br4/i_am_new_to_github_and_i_have_lots_to_say/?share_id=rjJKZS1aIO04c9zK5J3vL)? Please see [Releases](https://github.com/JosiahDanger/TheTea/releases/), and download 'TheTea.Windows.x64.zip'.
+
+You will need to install as a prerequisite the [x64 .NET Desktop Runtime 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
 
 ---
 
