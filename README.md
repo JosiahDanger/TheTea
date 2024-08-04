@@ -1,13 +1,13 @@
 # TheTea
 Bare-bones desktop tea timer app built with Avalonia.
 
+Do you simply want to run this app on Windows? Please see [Releases](https://github.com/JosiahDanger/TheTea/releases/), and download 'TheTea.Windows.x64.zip'. You will need to install the [.NET Desktop Runtime 8.0 x64](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
+
 I find that when I am brewing tea, I often become occupied with another task, and subsequently forget to remove the tea bag from my mug. I chose to develop this app in order to solve this problem. In doing so, I saw an opportunity to teach myself Avalonia and ReactiveUI / ReactiveX.
 
 &nbsp;
 
 ![Screenshot](https://github.com/user-attachments/assets/38713bc6-c537-41af-9405-e5a32b0e445b)
-
-If you simply want to run this application on Windows, please see [Releases](https://github.com/JosiahDanger/TheTea/releases/), and download 'TheTea.Windows.x64.zip'.
 
 # Existing Features
 - App theme adapts automatically to that of your operating system.
@@ -16,7 +16,7 @@ If you simply want to run this application on Windows, please see [Releases](htt
   - The app will speak to alert the user that their tea is ready.
 
 # Under the Hood
-- .NET 8.0!
+- .NET 8.0 !
 - The app follows the MVVM architechtural pattern: the ViewModel monitors the timer Model for changes in its state, and updates the View accordingly.
 - The aforementioned timer Model is implemented as a state machine using the [Stateless](https://github.com/dotnet-state-machine/stateless) library.
 - Sound playback is achieved through [LibVLCSharp](https://github.com/videolan/libvlcsharp).
