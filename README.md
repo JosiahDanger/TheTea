@@ -7,6 +7,8 @@ I find that when I am brewing tea, I often become occupied with another task, an
 
 ![Screenshot](https://github.com/user-attachments/assets/38713bc6-c537-41af-9405-e5a32b0e445b)
 
+If you simply want to run this application on Windows, please see [Releases](https://github.com/JosiahDanger/TheTea/releases/), and download 'TheTea.Windows.x64.zip'.
+
 # Existing Features
 - App theme adapts automatically to that of your operating system.
 - Audio output:
