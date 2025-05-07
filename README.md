@@ -1,5 +1,5 @@
 # TheTea
-Bare-bones desktop tea timer app built with Avalonia.
+Bare-bones desktop tea timer app built with Avalonia
 
 ---
 **TL;DR**
@@ -9,6 +9,8 @@ Do you simply [want a Windows executable](https://old.reddit.com/r/github/commen
 You will need to install as a prerequisite the [x64 .NET Desktop Runtime 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
 
 ---
+
+If you are a professional here to see an example of my work as a software developer, please see [DateToday](https://github.com/JosiahDanger/DateToday) instead.
 
 I find that when I am brewing tea, I often become occupied with another task, and subsequently forget to remove the tea bag from my mug. I chose to develop this app in order to solve this problem. In doing so, I saw an opportunity to teach myself Avalonia and ReactiveUI / ReactiveX.
 
@@ -40,7 +42,3 @@ I find that when I am brewing tea, I often become occupied with another task, an
 # Issues
 
 This app is affected by the LibVLCSharp bug '[Memory usage grows when switching to new Media in MediaPlayer](https://code.videolan.org/videolan/LibVLCSharp/-/issues/442)', issue Status: Open. This is out of my control for now.
-
-I am new to ReactiveUI / ReactiveX, and I feel that I have a lot to learn. In particular, I am unsure of when I should explicitly dispose of IDisposable objects. Please let me know if I have misused any ReactiveUI operators.
-
-In addition, I would appreciate feedback regarding the structure of my application. Please inform me if you come across any instances of bad programming practice. I would like to prioritise neat and readable code.
